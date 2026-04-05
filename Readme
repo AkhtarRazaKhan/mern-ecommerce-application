@@ -1,0 +1,46 @@
+This project is the backend of a full-stack e-commerce platform, built using Node.js, Express, and MongoDB. The server is designed to be secure, scalable, and high-performance, providing RESTful APIs for authentication, product management, orders, payments, and user interactions.
+
+It works seamlessly with the frontend built in React and Vite to deliver a complete e-commerce experience.
+
+🧰 Tech Stack & Libraries
+Core Backend
+Node.js – JavaScript runtime for server-side logic
+Express 5 – Web framework for building REST APIs
+MongoDB + Mongoose – NoSQL database with schema modeling
+Security & Middleware
+Helmet – Adds HTTP headers for enhanced security
+CORS – Handles cross-origin requests
+Cookie-Parser – For parsing and managing cookies
+Authentication & Authorization
+JWT (jsonwebtoken) – Token-based authentication
+bcrypt – Secure password hashing
+File & Media Handling
+Multer – Handling file uploads (product images, user avatars)
+Cloudinary – Cloud-based media storage
+Email & Notifications
+Nodemailer – Sending transactional emails (order confirmation, password reset)
+Development Utilities
+Nodemon – Auto-restarts server during development
+Morgan – HTTP request logger
+Environment & Config
+dotenv – Managing environment variables securely
+
+🔥 Make sure to create a .env file with following variables -
+
+PORT=
+MONGODB_URI=
+
+EMAIL=
+EMAIL_PASS=
+
+JSON_WEB_TOKEN_SECRET_KEY=
+
+ACCESS_TOKEN_SECRET=
+ACCESS_TOKEN_EXPIRY=
+
+REFRESH_TOKEN_SECRET=
+REFRESH_TOKEN_EXPIRY=
+
+CLOUDINARY_CLOUD_NAME =
+CLOUDINARY_API_KEY =
+CLOUDINARY_API_SECRET =
