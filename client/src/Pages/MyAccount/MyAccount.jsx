@@ -6,9 +6,7 @@ import AccountSidebar from '../../components/AccountSidebar/AccountSidebar';
 const MyAccount = () => {
   return (
     <section className='w-full py-10'>
-        <div className='container flex gap-5'>
-            
-
+          
             <div className='col1 w-[15%]'>
                 {/* Component */}
             <AccountSidebar/>
@@ -30,14 +28,7 @@ const MyAccount = () => {
                             />
                         </div>
 
-                         <div className='w-[50%]'>
-                            <TextField
-                            label="Email"
-                            variant='outlined'
-                            size='small'
-                            className='w-full'
-                            />
-                        </div>
+                  
                         
 
                     </div>
@@ -46,7 +37,7 @@ const MyAccount = () => {
 
                     <div className='flex items-center gap-4'>
                         <Button className='btn-org btn-lg w-[100px]'> Save </Button>
-                        <Button className='btn-org btn-lg btn-border w-[100px]'> Cancel </Button>
+                  
 
                     </div>
 
