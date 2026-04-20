@@ -2,12 +2,7 @@ import React from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import ProductItem from '../../components/ProductItem/ProductItem'
 import Button from '@mui/material/Button'
-import { IoGridSharp } from "react-icons/io5";
-import { GrMenu } from "react-icons/gr";
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import { useState } from 'react';
-import ProListView from '../../components/ProductItem/ProListView';
+
 
 const ProductListing = () => {
 
@@ -43,30 +38,7 @@ const ProductListing = () => {
 
            {/* Grid Logo (Product View) */}
 
-          <div className='bg-[#f1f1f1] p-2 w-full mb-3 rounded-md flex items-center justify-between'>
-            <div className='col1 flex items-center itemViewActions'>
-
-              <Button className={`!text-[15px] !w-[40px] !h-[40px] !min-w-[30px] !rounded-full !text-[#000] ${itemView==="list" && 'active'}`}
-
-              onClick={()=> setItemView('list')}>
-                 <GrMenu className='text-[rgba(0,0,0,0.7)]' />
-               </Button>
-
-              <Button className={`!text-[15px] !w-[40px] !h-[40px] !min-w-[30px] !rounded-full !text-[#000] ${itemView==="grid" && 'active'}`}
-
-               onClick={()=> setItemView('grid')}> 
-               <IoGridSharp className='text-[rgba(0,0,0,0.7)]' />
-               </Button>
-
-               <span className='text-[14px] font-[500] pl-3 text-[rgba(0,0,0,0.7)] '> There are 27 Prodcuts.</span>
-
-            </div>
-
-            <div className='col2  flex items-center justify-end gap-3 pr-4'>
-
-              <span className='text-[14px] font-[500] pl-3 text-[rgba(0,0,0,0.7)] '> Short By </span>
-
-              {/* Button & Menu from MUI */}
+       on & Menu from MUI */}
             <Button
             id="basic-button"
             aria-controls={open ? 'basic-menu' : undefined}
@@ -122,16 +94,7 @@ const ProductListing = () => {
             <ProductItem/> 
             </>
             :
-            <>
-            <ProListView/>
-            <ProListView/>
-            <ProListView/>
-            <ProListView/>
-            <ProListView/>
-            <ProListView/>
-            <ProListView/>
-            
-            </>
+           
             }
 
             
