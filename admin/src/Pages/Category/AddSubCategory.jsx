@@ -18,22 +18,7 @@ const AddSubCategoy = () => {
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files);
 
-    const newImages = files.map((file) => ({
-      file,
-      url: URL.createObjectURL(file),
-    }));
-
-    setImages((prev) => [...prev, ...newImages]);
-  };
-
-  const removeImage = (index) => {
-    setImages((prev) => {
-      const newImgs = [...prev];
-      URL.revokeObjectURL(newImgs[index].url); // Clean up memory
-      newImgs.splice(index, 1);
-      return newImgs;
-    });
-  };
+   
 
   return (
     <>
