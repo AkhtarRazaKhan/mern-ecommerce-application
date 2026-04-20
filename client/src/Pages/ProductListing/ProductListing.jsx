@@ -1,7 +1,4 @@
 import React from 'react'
-import Sidebar from '../../components/Sidebar/Sidebar'
-import ProductItem from '../../components/ProductItem/ProductItem'
-import Button from '@mui/material/Button'
 
 
 const ProductListing = () => {
@@ -38,17 +35,7 @@ const ProductListing = () => {
 
            {/* Grid Logo (Product View) */}
 
-       on & Menu from MUI */}
-            <Button
-            id="basic-button"
-            aria-controls={open ? 'basic-menu' : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? 'true' : undefined}
-            onClick={handleClick}
-            className='!bg-white !text-[12px] !text-[#000] !capitalize'
-          >
-            Name , A to Z
-          </Button>
+      
              <Menu
               id="basic-menu"
               anchorEl={anchorEl}
@@ -88,11 +75,7 @@ const ProductListing = () => {
             <ProductItem/>
             <ProductItem/>
             <ProductItem/>
-            <ProductItem/>
-            <ProductItem/>
-            <ProductItem/>
-            <ProductItem/> 
-            </>
+         
             :
            
             }
