@@ -57,15 +57,7 @@ const CartPanel = () => {
               </div>
 
               {/* Third Cart Item */}
-               <div className="cartItem w-full flex items-center gap-4 border-b 
-              border-[rgba(0,0,0,0.1)] pb-4">
-                <div className="img w-[25%] overflow-hidden h-[80px] rounded-md">
-                  <img
-                   src="/product1c.jpg"
-                   className="w-full"
-                   />
-                </div>
-    
+              
     
                 
     
