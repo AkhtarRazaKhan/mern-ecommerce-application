@@ -43,8 +43,7 @@ const ProDetailsContent = () => {
                onClick={()=> setProductActionIndex(0)}>S</Button>
               <Button className={`${productActionIndex === 1? "!bg-primary !text-white" :""} `}
                onClick={()=> setProductActionIndex(1)}>M</Button>
-              <Button className={`${productActionIndex === 2? "!bg-primary !text-white" :""} `}
-               onClick={()=> setProductActionIndex(2)}>L</Button>
+             
               
             </div>
            </div>
